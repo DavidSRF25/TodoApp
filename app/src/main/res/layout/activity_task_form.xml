@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la Tarea -->
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título de la tarea"
+        android:inputType="text"
+        android:textSize="16sp" />
+
+    <!-- Descripción de la Tarea -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:lines="4"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Checkbox para marcar como completada -->
+    <CheckBox
+        android:id="@+id/checkBoxCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcar como completada"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para guardar la tarea -->
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar tarea"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
